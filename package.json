@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/PeterLangPersonal/nanoleaf_server/issues"
   },
-  "homepage": "https://github.com/PeterLangPersonal/nanoleaf_server#readme"
+  "homepage": "https://github.com/PeterLangPersonal/nanoleaf_server#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
