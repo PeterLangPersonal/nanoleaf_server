@@ -1,0 +1,19 @@
+{
+  "name": "nanoleaf_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterLangPersonal/nanoleaf_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterLangPersonal/nanoleaf_server/issues"
+  },
+  "homepage": "https://github.com/PeterLangPersonal/nanoleaf_server#readme"
+}
