@@ -8,7 +8,8 @@ const marketingDataInstances = Object.values(marketingData.marketingData);
 const productInstances = products.productSKU;
 const salesOrderInstances = salesOrders.salesOrders;
 
-// Bulk upload makes more sense for what we're doing here, however single upload makes more sense for a reusable route and building bulk upload later is trivial
+// A route for bulk upload makes more sense for what we're doing here, however single upload makes more sense for a reusable route and building bulk upload later is trivial
+// I personally decided to upload via looping through the json data, however if I were to create a bulk upload route the backend would have a single route that uses the sequelize bulk create function
 marketingDataInstances.forEach(async (marketingDataInstance) => {
     await axios.post('http://localhost:8000/marketingData/', marketingDataInstance, {
         headers: {
@@ -37,7 +38,6 @@ Object.keys(salesOrderInstances).map((orderId) => {
         ...salesOrderInstances[orderId as keyof typeof salesOrderInstances],
     };
 }).forEach(async (formattedSalesOrderInstances) => {
-    console.log(formattedSalesOrderInstances);
     await axios.post('http://localhost:8000/salesOrder/', formattedSalesOrderInstances, {
         headers: {
             'Content-Type': 'application/json' ,

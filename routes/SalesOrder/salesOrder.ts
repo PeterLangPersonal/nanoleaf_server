@@ -13,7 +13,6 @@ SalesOrderRouter.get('/', async (req, res) => {
 
 SalesOrderRouter.post('/', async (req, res) => {
     try {
-        console.log(req.body);
         const salesOrder = salesOrderSchema.parse(req.body);
 
         // Normally I would use a resource directory for database interactions, but these routes are simple enough to keep in the routes themselves
@@ -22,7 +21,6 @@ SalesOrderRouter.post('/', async (req, res) => {
         res.status(200);
         res.send();
     } catch (e) {
-        console.log('fail');
         res.status(400);
         res.send(e);
     }
