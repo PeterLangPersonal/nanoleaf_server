@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "nanoleaf",
+    "password": "nanoleaf",
+    "database": "nanoleafdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "nanoleaf",
+    "password": "nanoleaf",
+    "database": "nanoleafdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "nanoleaf",
+    "password": "nanoleaf",
+    "database": "nanoleafdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
