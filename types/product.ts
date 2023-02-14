@@ -19,4 +19,4 @@ export type ProductAttributes = {
     shortDesc: string;
     stockLink: string;
     lastUpdated: string;
-}
+};

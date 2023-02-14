@@ -13,7 +13,6 @@ MarketingDataRouter.get('/', async (req, res) => {
 
 MarketingDataRouter.post('/', async (req, res) => {
     try {
-        console.log(req.body);
         const marketingData = marketingDataSchema.parse(req.body);
 
         // Normally I would use a resource directory for database interactions, but these routes are simple enough to keep in the routes themselves

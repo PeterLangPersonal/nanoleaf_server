@@ -8,7 +8,7 @@ export type SalesOrderAttributes = {
     taxes: {[key: string]: number}[];
     taxType: string;
     total: number;
-    lineItems: {[key: string]: number}[];
-    fulfillments: (string | number)[];
+    lineItems: {[key: string]: number};
+    fulfillments: (string | number)[][];
     payments: (string | number)[]; 
 };
